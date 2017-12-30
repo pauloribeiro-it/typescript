@@ -1,3 +1,4 @@
+//Interfaces
 var LanguageKnown;
 (function (LanguageKnown) {
     LanguageKnown[LanguageKnown["English"] = 0] = "English";
