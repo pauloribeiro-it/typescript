@@ -22,9 +22,9 @@ studentList.push(student);
 //     console.log(element);
 // }
 //printStudentsList(studentList);
-GetNumbers(1, 2, 3, 4, 5);
-GetInfo("hi");
-GetInfo();
+//GetNumbers(1,2,3,4,5);
+//GetInfo("hi");
+//GetInfo();
 function printStudentsList(students) {
     students.forEach(function (element) {
         console.log("Name: " + element.Name);
@@ -45,4 +45,13 @@ function GetInfo(info) {
     if (info === void 0) { info = "hello"; }
     console.log(info);
 }
+//#####################################ADVANCED FUNCTIONS #########################################
+//Anonymous function
+var StudentName = function (lName, fName) {
+    return fName + "..." + lName;
+};
+console.log(StudentName("Washington", "George"));
+//Arrow Function
+var StudentFullName = function (lName, fName) { return fName + " - " + lName; };
+console.log(StudentFullName("Kuchiki", "Byakuya"));
 //# sourceMappingURL=app.js.map

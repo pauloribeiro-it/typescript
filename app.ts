@@ -22,9 +22,9 @@ studentList.push(student)
 //     console.log(element);
 // }
 //printStudentsList(studentList);
-GetNumbers(1,2,3,4,5);
-GetInfo("hi");
-GetInfo();
+//GetNumbers(1,2,3,4,5);
+//GetInfo("hi");
+//GetInfo();
 
 function printStudentsList(students: any[]){
     students.forEach(element => {
@@ -42,3 +42,17 @@ function GetNumbers(...nums:number[]){
 function GetInfo(info:string = "hello"){
     console.log(info);
 }
+
+
+//#####################################ADVANCED FUNCTIONS #########################################
+//Anonymous function
+let StudentName = function(lName:string,fName:string){
+    return fName + "..." + lName;
+}
+
+console.log(StudentName("Washington","George")) ;
+
+//Arrow Function
+let StudentFullName = (lName:string,fName:string) => {return fName + " - " + lName};
+
+console.log(StudentFullName("Kuchiki","Byakuya"));
