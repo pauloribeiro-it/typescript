@@ -55,4 +55,17 @@ console.log(StudentName("Washington", "George"));
 //Arrow Function
 var StudentFullName = function (lName, fName) { return fName + " - " + lName; };
 console.log(StudentFullName("Kuchiki", "Byakuya"));
+//############################CLASSES###############################
+var Student = /** @class */ (function () {
+    function Student(_lName, _fName) {
+        this._lName = _lName;
+        this._fName = _fName;
+    }
+    Student.prototype.GetFullName = function () {
+        return this._lName + "..." + this._fName;
+    };
+    return Student;
+}());
+var s = new Student("Kurosaki", "Ichigo");
+console.log("Full name: " + s.GetFullName());
 //# sourceMappingURL=app.js.map
