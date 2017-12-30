@@ -7,7 +7,7 @@
     "args": [
         "-w","-p","."
     ],
-    "showOutput": "silent",
+    "showOutput": "always",
     "isBackground": true,
     "problemMatcher":"$tsc-watch"
 
