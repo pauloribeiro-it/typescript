@@ -1,4 +1,6 @@
-//Interfaces
+"use strict";
+exports.__esModule = true;
+var Student_1 = require("./Student");
 var LanguageKnown;
 (function (LanguageKnown) {
     LanguageKnown[LanguageKnown["English"] = 0] = "English";
@@ -56,19 +58,7 @@ console.log(StudentName("Washington", "George"));
 var StudentFullName = function (lName, fName) { return fName + " - " + lName; };
 console.log(StudentFullName("Kuchiki", "Byakuya"));
 //############################CLASSES###############################
-var Student = /** @class */ (function () {
-    function Student(lName, fName) {
-        this.lName = lName;
-        this.fName = fName;
-        this.lName = lName;
-        this.fName = fName;
-    }
-    Student.prototype.GetFullName = function () {
-        return this.lName + "..." + this.fName;
-    };
-    return Student;
-}());
-var s = new Student("Kurosaki", "Ichigo");
+var s = new Student_1.Student("Kurosaki", "Ichigo");
 console.log("Full name: " + s.GetFullName());
 //*****************************Generics*************************************/
 function printGenericStudentsList(students) {

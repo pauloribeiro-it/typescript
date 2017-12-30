@@ -1,11 +1,6 @@
-//Interfaces
+import {StudentInfo} from './IStudentInfo'
+import {Student} from './Student'
 
-interface StudentInfo{
-    Name: string,
-    Age: Number,
-    PhoneNumber: Number,
-    Language: string
-}
 enum LanguageKnown{
     English,Spanish, French, Portuguese
 }
@@ -67,17 +62,6 @@ console.log(StudentFullName("Kuchiki","Byakuya"));
 
 
 //############################CLASSES###############################
-class Student{
-       
-    constructor(private lName:string,private fName:string){
-        this.lName = lName;
-        this.fName = fName;
-    }
-
-    GetFullName():string{
-        return this.lName + "..." + this.fName;
-    }
-}
 
 let s = new Student("Kurosaki","Ichigo");
 console.log("Full name: "+s.GetFullName());
