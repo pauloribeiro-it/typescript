@@ -68,16 +68,14 @@ console.log(StudentFullName("Kuchiki","Byakuya"));
 
 //############################CLASSES###############################
 class Student{
-    private _lName:string;
-    private _fName:string;
-    
-    constructor(_lName:string,_fName:string){
-        this._lName = _lName;
-        this._fName = _fName;
+       
+    constructor(private lName:string,private fName:string){
+        this.lName = lName;
+        this.fName = fName;
     }
 
     GetFullName():string{
-        return this._lName + "..." + this._fName;
+        return this.lName + "..." + this.fName;
     }
 }
 
