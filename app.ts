@@ -17,13 +17,13 @@ let student:StudentInfo = {
     Language: LanguageKnown[LanguageKnown.Portuguese]
 }
 
-let studentList:StudentInfo[] = [
+let studentListGenerics:Array<StudentInfo> = [
     {Name:"Pessoa1",Age:20,PhoneNumber:121212121, Language: LanguageKnown[LanguageKnown.English]},
     {Name:"Pessoa2",Age:21,PhoneNumber:131313131, Language: LanguageKnown[LanguageKnown.Spanish]},
     {Name:"Pessoa3",Age:22,PhoneNumber:141414141, Language: LanguageKnown[LanguageKnown.French]}
 ]
 
-studentList.push(student)
+studentListGenerics.push(student)
 
 // for (let index = 0; index < studentList.length; index++) {
 //     var element = studentList[index];
@@ -81,3 +81,14 @@ class Student{
 
 let s = new Student("Kurosaki","Ichigo");
 console.log("Full name: "+s.GetFullName());
+
+
+
+//*****************************Generics*************************************/
+function printGenericStudentsList(students: Array<StudentInfo>){
+    students.forEach(element => {
+        console.log("Name: "+element.Name);
+    });
+}
+
+printGenericStudentsList(studentListGenerics);
