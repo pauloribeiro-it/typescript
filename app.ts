@@ -17,7 +17,28 @@ let studentList = [
 
 studentList.push(student)
 
-for (let index = 0; index < studentList.length; index++) {
-    var element = studentList[index];
-    console.log(element);
+// for (let index = 0; index < studentList.length; index++) {
+//     var element = studentList[index];
+//     console.log(element);
+// }
+//printStudentsList(studentList);
+GetNumbers(1,2,3,4,5);
+GetInfo("hi");
+GetInfo();
+
+function printStudentsList(students: any[]){
+    students.forEach(element => {
+        console.log("Name: "+element.Name);
+    });
+}
+//Rest parameter function
+function GetNumbers(...nums:number[]){
+    nums.forEach(element => {
+        console.log("Num: "+element);
+    });
+}
+
+//Default parameters
+function GetInfo(info:string = "hello"){
+    console.log(info);
 }

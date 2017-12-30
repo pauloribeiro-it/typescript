@@ -17,8 +17,32 @@ var studentList = [
     { Name: "Pessoa3", Age: 22, PhoneNumber: 141414141, Language: LanguageKnown[LanguageKnown.French] }
 ];
 studentList.push(student);
-for (var index = 0; index < studentList.length; index++) {
-    var element = studentList[index];
-    console.log(element);
+// for (let index = 0; index < studentList.length; index++) {
+//     var element = studentList[index];
+//     console.log(element);
+// }
+//printStudentsList(studentList);
+GetNumbers(1, 2, 3, 4, 5);
+GetInfo("hi");
+GetInfo();
+function printStudentsList(students) {
+    students.forEach(function (element) {
+        console.log("Name: " + element.Name);
+    });
+}
+//Rest parameter function
+function GetNumbers() {
+    var nums = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        nums[_i] = arguments[_i];
+    }
+    nums.forEach(function (element) {
+        console.log("Num: " + element);
+    });
+}
+//Default parameters
+function GetInfo(info) {
+    if (info === void 0) { info = "hello"; }
+    console.log(info);
 }
 //# sourceMappingURL=app.js.map
