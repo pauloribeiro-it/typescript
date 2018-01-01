@@ -1,4 +1,4 @@
-import {StudentInfo} from './IStudentInfo'
+import StudentInfo from './IStudentInfo'
 import Student from './Student'
 
 enum LanguageKnown{
