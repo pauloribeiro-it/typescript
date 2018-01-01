@@ -5,4 +5,4 @@ interface IStudentInfo{
     Language: string
 }
 
-export {IStudentInfo};
+export {IStudentInfo as StudentInfo};

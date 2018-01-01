@@ -1,5 +1,5 @@
 import {StudentInfo} from './IStudentInfo'
-import {Student} from './Student'
+import Student from './Student'
 
 enum LanguageKnown{
     English,Spanish, French, Portuguese

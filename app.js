@@ -58,7 +58,7 @@ console.log(StudentName("Washington", "George"));
 var StudentFullName = function (lName, fName) { return fName + " - " + lName; };
 console.log(StudentFullName("Kuchiki", "Byakuya"));
 //############################CLASSES###############################
-var s = new Student_1.Student("Kurosaki", "Ichigo");
+var s = new Student_1["default"]("Kurosaki", "Ichigo");
 console.log("Full name: " + s.GetFullName());
 //*****************************Generics*************************************/
 function printGenericStudentsList(students) {

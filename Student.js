@@ -12,5 +12,6 @@ var Student = /** @class */ (function () {
     };
     return Student;
 }());
-exports.Student = Student;
+exports["default"] = Student;
+//export {Student} 
 //# sourceMappingURL=Student.js.map
