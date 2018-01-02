@@ -1,4 +1,4 @@
-export default class Student{
+class Student{
        
     constructor(private lName:string,private fName:string){
         this.lName = lName;
@@ -10,4 +10,4 @@ export default class Student{
     }
 }
 
-//export {Student}
+export {Student}

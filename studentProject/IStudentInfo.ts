@@ -1,8 +1,8 @@
-export default interface IStudentInfo{
+interface IStudentInfo{
     Name: string,
     Age: Number,
     PhoneNumber: Number,
     Language: string
 }
 
-//export {IStudentInfo as StudentInfo};
+export {IStudentInfo as StudentInfo};
