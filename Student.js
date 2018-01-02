@@ -1,17 +1,16 @@
 "use strict";
-exports.__esModule = true;
-var Student = /** @class */ (function () {
-    function Student(lName, fName) {
+Object.defineProperty(exports, "__esModule", { value: true });
+class Student {
+    constructor(lName, fName) {
         this.lName = lName;
         this.fName = fName;
         this.lName = lName;
         this.fName = fName;
     }
-    Student.prototype.GetFullName = function () {
+    GetFullName() {
         return this.lName + "..." + this.fName;
-    };
-    return Student;
-}());
-exports["default"] = Student;
+    }
+}
+exports.default = Student;
 //export {Student} 
 //# sourceMappingURL=Student.js.map
